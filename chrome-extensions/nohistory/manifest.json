@@ -1,0 +1,16 @@
+{
+  "name": "nohistory",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "Erase all history",
+
+  "permissions": [
+    "browsingData"
+  ],
+  "background": {
+    "scripts": [
+      "lib/script.js"
+    ]
+  }
+}
