@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+ARGV.each do |filename|
+  filename = filename.dup
+  filename.force_encoding('utf8-mac')
+  move_to = filename.encode('utf-8')
+
+  unless File.exist?(move_to)
+    FileUtils.mv(filename, move_to)
+    puts "Moved: #{move_to}"
+  end
+end

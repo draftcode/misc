@@ -1,0 +1,4 @@
+#!/bin/sh
+MESSAGE="[from now] `date +\"%Y/%m/%d %T\"`"
+
+git commit -m "$MESSAGE" "$@"

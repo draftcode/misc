@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+filename_base = "screenshot-#{Time.now.strftime("%Y-%m-%d")}"
+suffix = ''
+suffix_number = 0
+while File.exists?(File.expand_path("~/#{filename_base}#{suffix}.png"))
+  suffix_number += 1
+  suffix = "_#{suffix_number}"
+end
+filename = File.expand_path("~/#{filename_base}#{suffix}.png")
+
+`import #{filename}`
