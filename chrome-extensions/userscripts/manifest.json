@@ -1,0 +1,14 @@
+{
+  "name": "Userscripts",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "Userscripts",
+
+  "content_scripts": [
+    {
+      "matches": ["http://reader.livedoor.com/reader/"],
+      "js": ["src/ldr_open_background.js"]
+    }
+  ]
+}
