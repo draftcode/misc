@@ -8,7 +8,8 @@
   "content_scripts": [
     {
       "matches": ["http://reader.livedoor.com/reader/"],
-      "js": ["src/ldr_open_background.js"]
+      "js": ["src/ldr_open_background.js"],
+      "css": ["src/ldr.css"]
     }
   ]
 }
