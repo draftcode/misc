@@ -38,5 +38,5 @@ keypressHandler = (e)->
     when 'k'
       window.scrollBy(0, -100)
 
-document.addEventListener("keypress", keypressHandler, true)
-document.addEventListener("focus", focusHandler, true)
+document.addEventListener("keypress", keypressHandler)
+document.addEventListener("focus", focusHandler)
